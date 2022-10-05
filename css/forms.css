@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h3 {
+	margin: 0;
+}
+
+input, button {
+	outline: none;
+	border: none;
+}
+
+.header__form {
+	width: 375px;
+	box-shadow: 0 0 30px 30px #dfdfdf;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	padding: 27px 0 20px 38px;
+}
+
+.header__title {
+	margin-right: 47px;
+	color: #211a18;
+	font-size: 20px;
+	margin-bottom: 45px;
+}
+
+.header__input {
+	width: 295px;
+	padding: 10px 0 10px 5px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.header__input:placeholder {
+	color: #000;
+	font-size: 15px;
+}
+
+.header__actions {
+	width: 295px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button {
+	width: 140px;
+	height: 55px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff5c36;
+	border-radius: 40px;
+	transition: .2s;
+}
+
+.button:hover {
+	background: #d45133;
+	cursor: pointer;
+}
+
+.recover_link {
+	position: relative;
+	width: 150px;
+	margin-left: 4px;
+	margin-bottom: 10px;
+	color: #5C5C5C;
+	font-size: 16px;
+	transition: .2s;
+	text-decoration: none;
+}
+
+.recover_link::before {
+	content: '';
+	width: 0;
+	position: absolute;
+	left: 0; bottom: -5px;
+	height: 1px;
+	background-color: #ff5c36;
+	transition: width 0.55s;
+}
+
+.recover_link:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.recover_link:hover:before {
+	width: 100%;
+}
+
+.link_to_register {
+	margin-right: 28px;
+	color: #ff5c36;
+	font-size: 17px;
+	background: #fff;
+	border-radius: 40px;
+	transition: .2s;
+	text-decoration: none;
+}
+
+.link_to_register:hover {
+	color: #d45133;
+	cursor: pointer;
+}
+
+.link_to_login {
+	margin-right: 13px;
+	color: #ff5c36;
+	font-size: 17px;
+	background: #fff;
+	border-radius: 40px;
+	transition: .2s;
+	text-decoration: none;
+}
+
+.link_to_login:hover {
+	color: #d45133;
+	cursor: pointer;
+}
+
+.link_cancel {
+	margin-right: 45px;
+	color: #ff5c36;
+	font-size: 17px;
+	background: #fff;
+	border-radius: 40px;
+	transition: .2s;
+	text-decoration: none;
+}
+
+.link_cancel:hover {
+	color: #d45133;
+	cursor: pointer;
+}
+
+.error_msg {
+	width: 295px;
+	color: #ff0000;
+	padding: 15px 0 0 0;
+	font-size: 16px;
+}
+
+.success_msg {
+	width: 295px;
+	color: #008000;
+	padding: 15px 0 0 0;
+	font-size: 16px;
+}

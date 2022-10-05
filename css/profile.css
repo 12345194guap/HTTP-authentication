@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	background: #2d2f49 url("../images/intro-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+input, button {
+	outline: none;
+	border: none;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.header_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-bottom: 50px;
+	color: #fff;
+	font-size: 45px;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.header_title h2 {
+	word-spacing: 30px;
+}
+
+.btn_exit {
+    width: 100px;
+	margin-left: 100px;
+    text-transform: uppercase;
+	background: #e84545;
+	color: #fff;
+	padding: 17px 0;
+	border-radius: 6px;
+	transition: .1s linear;
+}
+
+.content {
+	width: 500px;
+    color: #fff;
+	font-size: 20px;
+    margin: 50px 0;
+    line-height: 1.1;
+    under-line: none;
+	display: flex;
+}
+
+.form_title {
+	position: absolute;
+	margin-left: 45px;
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+
+.header_email {
+	margin-top: 70px;
+	color: #fff;
+	opacity: 0.4;
+	font-size: 20px;
+    text-decoration: none;
+	position: absolute;
+	letter-spacing: 1.1px;
+}
+
+.header_form {
+	width: 500px;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	color: #fff;
+	background: transparent;
+	margin: 20px 0;
+	width: 300px;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px solid #ff5c36;
+}
+
+input::placeholder {
+	color: #fff;
+	opacity: 0.4;
+	font-size: 15px;
+}
+
+.content_footer {
+	width: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.btn_change {
+    width: 88px;
+	min-width: 88px;
+    line-height: 1.5;
+    text-transform: uppercase;
+	font-weight: 400;
+	background: #e84545;
+	color: #ffffff;
+	padding: 10px 0;
+	border-radius: 6px;
+	transition: .1s linear;
+}
+
+button:hover{
+	background: #CE3131;
+    cursor: pointer;
+}
+
+.error_msg {
+	width: 211px;
+	font-size: 20px;
+	margin-left: 10px;
+	color: #FF0000;
+}
+
+.success_msg {
+	font-size: 20px;
+	margin-left: 50px;
+	color: #10FA00;
+}
