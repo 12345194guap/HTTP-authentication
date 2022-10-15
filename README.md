@@ -373,7 +373,7 @@ mysqli_query($conn, "CREATE DATABASE IF NOT EXISTS $db_name");
 $conn = mysqli_connect('127.0.0.1', 'root', 'root', $db_name);
 
 mysqli_query($conn, "CREATE TABLE IF NOT EXISTS users(
-id INT NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
+	id INT NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
 	user_name VARCHAR(100) NOT NULL,
 	secret_word VARCHAR(32) NOT NULL,
 	login VARCHAR(100) NOT NULL,
