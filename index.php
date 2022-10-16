@@ -16,7 +16,7 @@
 <body>
     <form class="header__form" action="php/sign_in.php" method="post">
         <h3 class="header__title">Authorization</h3>
-        <input class="header__input" name="login" type="text" placeholder="Enter login..."
+        <input autofocus class="header__input" name="login" type="text" placeholder="Enter login..."
         value="<?php if(isset($_SESSION['register']['login'])) echo $_SESSION['register']['login']?>">
         <input class="header__input" name="pass" type="password" placeholder="Enter password...">
         <a class="recover_link" href="recover.php">Forgot your password?</a>
