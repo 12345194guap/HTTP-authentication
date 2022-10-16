@@ -14,10 +14,10 @@
         <h3 class="header__title">Recovery</h3>
         <?php
             if (!isset($_SESSION['expire'])) {
-                echo '<input class="header__input" name="login" type="text" placeholder="Enter login...">';
+                echo '<input autofocus class="header__input" name="login" type="text" placeholder="Enter login...">';
                 echo '<input class="header__input" name="secret" type="text" placeholder="Enter secret word...">';
             }
-            echo '<input class="header__input" name="pass" type="password" placeholder="Enter a new password...">';
+            echo '<input autofocus class="header__input" name="pass" type="password" placeholder="Enter a new password...">';
             echo '<input class="header__input" name="pass_conf" type="password" placeholder="Confirm new password...">';
         ?>
         <div class="header__actions">
