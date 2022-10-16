@@ -25,7 +25,7 @@
 <body>
     <form class="header__form" action="php/sign_up.php" method="post">
         <h3 class="header__title">Registration</h3>
-        <input class="header__input" name="user_name" type="text" placeholder="Enter first and last name..."
+        <input autofocus class="header__input" name="user_name" type="text" placeholder="Enter first and last name..."
         value="<?php if(isset($_SESSION['register'])) echo $_SESSION['register']['user_name']?>">
 
         <input class="header__input" name="email" type="text" placeholder="Enter e-mail..."
