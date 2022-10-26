@@ -1,6 +1,7 @@
 <?php
     ini_set("session.cookie_lifetime", 3600);
     session_start();
+    if(isset($_SESSION['expire'])) unset($_SESSION['expire']);
     if(!$_SESSION['user']['auth']) {
         session_destroy();
         header('Location: index.php');
