@@ -15,7 +15,7 @@
             $_SESSION['error'] = "Password must include at least one number!";
             return false;
         }
-        else if (!preg_match("#[a-zA-Z]+#", $val)) {
+        else if (!preg_match("#[a-zA-Zа-яА-Я]+#", $val)) {
             $_SESSION['error'] = "Password must include at least one letter!";
             return false;
         }
